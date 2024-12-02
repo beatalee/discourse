@@ -22,7 +22,6 @@ import prepareFormTemplateData, {
 import { shortDate } from "discourse/lib/formatter";
 import { disableImplicitInjections } from "discourse/lib/implicit-injections";
 import { wantsNewWindow } from "discourse/lib/intercept-click";
-import { buildQuote } from "discourse/lib/quote";
 import renderTags from "discourse/lib/render-tags";
 import { emojiUnescape } from "discourse/lib/text";
 import {
@@ -399,16 +398,16 @@ export default class ComposerService extends Service {
         })
       );
 
-      if (this.capabilities.touch) {
-        options.push(
-          this._setupPopupMenuOption({
-            name: "format-code",
-            action: "applyFormatCode",
-            icon: "code",
-            label: "composer.code_title",
-          })
-        );
+      options.push(
+        this._setupPopupMenuOption({
+          name: "format-code",
+          action: "applyFormatCode",
+          icon: "code",
+          label: "composer.code_title",
+        })
+      );
 
+      if (this.capabilities.touch) {
         options.push(
           this._setupPopupMenuOption({
             name: "apply-unordered-list",
@@ -837,45 +836,6 @@ export default class ComposerService extends Service {
   fullscreenComposer() {
     this.toggleFullscreen();
     return false;
-  }
-
-  // Import a quote from the post
-  @action
-  async importQuote(toolbarEvent) {
-    const postStream = this.get("topic.postStream");
-    let postId = this.get("model.post.id");
-
-    // If there is no current post, use the first post id from the stream
-    if (!postId && postStream) {
-      postId = postStream.get("stream.firstObject");
-    }
-
-    // If we're editing a post, fetch the reply when importing a quote
-    if (this.get("model.editingPost")) {
-      const replyToPostNumber = this.get("model.post.reply_to_post_number");
-      if (replyToPostNumber) {
-        const replyPost = postStream.posts.findBy(
-          "post_number",
-          replyToPostNumber
-        );
-
-        if (replyPost) {
-          postId = replyPost.id;
-        }
-      }
-    }
-
-    if (!postId) {
-      return;
-    }
-
-    this.set("model.loading", true);
-
-    const post = await this.store.find("post", postId);
-    const quote = buildQuote(post, post.raw, { full: true });
-
-    toolbarEvent.addText(quote);
-    this.set("model.loading", false);
   }
 
   @action
