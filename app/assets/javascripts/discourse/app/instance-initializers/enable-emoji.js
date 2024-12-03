@@ -13,11 +13,12 @@ export default {
       api.onToolbarCreate((toolbar) => {
         toolbar.addButton({
           id: "emoji",
-          group: "extras",
+          group: "insertions",
           icon: "face-smile",
           action: () => toolbar.context.send("emoji"),
           title: "composer.emoji",
           className: "emoji insert-emoji",
+          unshift: true,
         });
       });
     });

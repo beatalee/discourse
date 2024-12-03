@@ -877,7 +877,7 @@ export default class ComposerEditor extends Component {
     }
 
     toolbar.addButton({
-      id: "options",
+      id: "more-options",
       group: "extras",
       icon: "circle-plus",
       title: "composer.options",
