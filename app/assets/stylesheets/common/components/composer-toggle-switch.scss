@@ -8,18 +8,16 @@
   display: flex;
   align-items: center;
 
-  &__button {
-    border: 0;
-    padding: 0;
-    background: transparent;
+  border: 0;
+  padding: 0;
+  background: transparent;
 
-    &:focus-visible {
-      outline: none;
-    }
-    &[disabled] {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
+  &:focus-visible {
+    outline: none;
+  }
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 
   &__slider {
