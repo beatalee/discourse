@@ -1,5 +1,3 @@
-// TODO(renato): similar to emoji, avoid joining anything@mentions, as it's invalid markdown
-
 import { mentionRegex } from "pretty-text/mentions";
 
 export default {

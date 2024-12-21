@@ -17,6 +17,8 @@ export default {
       group: "block",
       tableRole: "table",
       isolating: true,
+      selectable: true,
+      draggable: true,
       parseDOM: [{ tag: "table" }],
       toDOM() {
         return ["table", 0];
@@ -124,9 +126,12 @@ export default {
     table(state, node) {
       state.flushClose(1);
 
-      let headerBuffer = state.delim && state.atBlank() ? state.delim : "";
+      let headerBuffer = state.delim;
       const prevInTable = state.inTable;
       state.inTable = true;
+
+      // leading newline, it seems to have issues in a line just below a > blockquote otherwise
+      state.out += "\n";
 
       // group is table_head or table_body
       node.forEach((group, groupOffset, groupIndex) => {

@@ -18,8 +18,8 @@ import typographerReplacements from "./typographer-replacements";
 import underline from "./underline";
 
 const defaultExtensions = [
+  // emoji before image
   emoji,
-  // image must be after emoji
   image,
   hashtag,
   mention,
@@ -27,16 +27,17 @@ const defaultExtensions = [
   underline,
   htmlInline,
   htmlBlock,
+  // onebox before link
+  onebox,
   link,
   heading,
   codeBlock,
   quote,
-  onebox,
   trailingParagraph,
   typographerReplacements,
   markdownPaste,
 
-  // table must  be last
+  // table last
   table,
 ];
 

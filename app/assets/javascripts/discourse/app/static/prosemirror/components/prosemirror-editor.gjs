@@ -13,12 +13,14 @@ import {
 } from "discourse/lib/composer/rich-editor-extensions";
 import * as ProsemirrorModel from "prosemirror-model";
 import * as ProsemirrorView from "prosemirror-view";
+import * as ProsemirrorState from "prosemirror-state";
+import * as ProsemirrorHistory from "prosemirror-history";
+import * as ProsemirrorTransform from "prosemirror-transform";
 import { createHighlight } from "../plugins/code-highlight";
 import { baseKeymap } from "prosemirror-commands";
 import { dropCursor } from "prosemirror-dropcursor";
 import { history } from "prosemirror-history";
 import { keymap } from "prosemirror-keymap";
-import * as ProsemirrorState from "prosemirror-state";
 import { EditorState, Plugin } from "prosemirror-state";
 import { EditorView } from "prosemirror-view";
 import { bind } from "discourse-common/utils/decorators";
@@ -29,12 +31,16 @@ import { convertToMarkdown } from "../lib/serializer";
 import { buildInputRules } from "../plugins/inputrules";
 import { buildKeymap } from "../plugins/keymap";
 import placeholder from "../plugins/placeholder";
+import { gapCursor } from "prosemirror-gapcursor";
 
 export default class ProsemirrorEditor extends Component {
   @service appEvents;
   @service menu;
   @service siteSettings;
+  @service dialog;
+
   @tracked rootElement;
+
   editorContainerId = guidFor(this);
   schema = createSchema();
   view;
@@ -59,18 +65,11 @@ export default class ProsemirrorEditor extends Component {
       keymap(buildKeymap(this.schema, keymapFromArgs)),
       keymap(baseKeymap),
       dropCursor({ color: "var(--primary)" }),
+      gapCursor(),
       history(),
       placeholder(this.args.placeholder),
       createHighlight(),
-      ...getPlugins().map((plugin) =>
-        typeof plugin === "function"
-          ? plugin({
-              ...ProsemirrorState,
-              ...ProsemirrorModel,
-              ...ProsemirrorView,
-            })
-          : new Plugin(plugin)
-      ),
+      ...getPlugins().flatMap(processPlugin),
     ];
 
     this.state = EditorState.create({
@@ -126,9 +125,14 @@ export default class ProsemirrorEditor extends Component {
 
   @bind
   convertFromValue() {
-    const doc = convertFromMarkdown(this.schema, this.args.value);
-
-    // console.log("Resulting doc:", doc);
+    let doc;
+    try {
+      doc = convertFromMarkdown(this.schema, this.args.value);
+    } catch (e) {
+      console.error(e);
+      this.dialog.alert(e.message);
+      return;
+    }
 
     const tr = this.state.tr
       .replaceWith(0, this.state.doc.content.size, doc.content)
@@ -150,4 +154,20 @@ export default class ProsemirrorEditor extends Component {
     >
     </div>
   </template>
+}
+
+function processPlugin(plugin) {
+  if (typeof plugin === "function") {
+    return plugin({
+      ...ProsemirrorState,
+      ...ProsemirrorModel,
+      ...ProsemirrorView,
+      ...ProsemirrorHistory,
+      ...ProsemirrorTransform,
+    });
+  }
+  if (plugin instanceof Array) {
+    return plugin.map(processPlugin);
+  }
+  return new Plugin(plugin);
 }

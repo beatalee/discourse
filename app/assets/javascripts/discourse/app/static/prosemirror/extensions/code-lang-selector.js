@@ -33,8 +33,6 @@ class CodeBlockWithLangSelectorNodeView {
 
     this.dom.appendChild(select);
 
-    // TODO(renato): leaving with the keyboard to before the node doesn't work
-
     const code = document.createElement("code");
     this.dom.appendChild(document.createElement("pre")).appendChild(code);
     this.contentDOM = code;

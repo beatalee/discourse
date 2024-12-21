@@ -17,6 +17,16 @@
     pointer-events: none;
   }
 
+  > div:first-child,
+  > details:first-child {
+    // This is hacky, but helps having the leading gapcursor at the right position
+    &.ProseMirror-gapcursor {
+      position: relative;
+      display: block;
+    }
+    margin-top: 0.5rem;
+  }
+
   h1,
   h2,
   h3,
@@ -43,7 +53,6 @@
 
   img {
     display: inline-block;
-    margin: 0 auto;
     max-width: 100%;
 
     &[data-placeholder="true"] {
@@ -118,6 +127,14 @@
     // but overriding just for the editor for now
     display: inline;
     padding-top: 0.2rem;
+  }
+
+  .onebox-wrapper {
+    white-space: normal;
+
+    a {
+      pointer-events: all;
+    }
   }
 }
 
@@ -199,8 +216,38 @@ li.ProseMirror-selectednode:after {
 
 /* Protect against generic img rules */
 
-img.ProseMirror-separator {
+.ProseMirror-separator {
   display: inline !important;
   border: none !important;
   margin: 0 !important;
+}
+
+/*
+ Everything below was copied from prosemirror-gapcursor/style/gapcursor.css
+ */
+
+.ProseMirror-gapcursor {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+}
+
+.ProseMirror-gapcursor:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  width: 20px;
+  border-top: 1px solid var(--primary);
+  animation: ProseMirror-cursor-blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes ProseMirror-cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.ProseMirror-focused .ProseMirror-gapcursor {
+  display: block;
 }
