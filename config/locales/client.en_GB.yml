@@ -127,7 +127,6 @@ en_GB:
               anonymize: Anonymise user accounts.
       appearance:
         sidebar_link:
-          color_schemes: "Colour palettes"
           navigation: "Navigation"
       config_areas:
         flags:

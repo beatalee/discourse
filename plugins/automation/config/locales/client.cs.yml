@@ -143,6 +143,8 @@ cs:
             label: Spouštěč
           version:
             label: Verze
+          status:
+            label: Stav
           enabled:
             label: Zapnuto
           disabled:

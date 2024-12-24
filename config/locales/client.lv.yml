@@ -678,12 +678,12 @@ lv:
       public_admission: "Atļaut lietotājiem brīvi pievienoties grupai (šai grupai jābūt publiski redzamai)"
       public_exit: "Ļaut lietotājiem brīvi pamest grupu"
       empty:
-        posts: "Grupas dalībnieki nav veikuši nevienu ierakstu."
-        members: "Šai grupā nav dalībnieku."
-        mentions: "Neviens nav pieminējis šo grupu."
-        messages: "Nav šai grupai adresētu ziņu."
-        topics: "Grupas dalībnieki nav izveidojuši nevienu tēmu."
-        logs: "Par šo grupu nav žurnāla ierakstu."
+        posts: "Grupas dalībnieki nav veikuši nevienu ierakstu"
+        members: "Šai grupā nav dalībnieku"
+        mentions: "Neviens nav pieminējis šo grupu"
+        messages: "Nav šai grupai adresētu ziņu"
+        topics: "Grupas dalībnieki nav izveidojuši nevienu tēmu"
+        logs: "Par šo grupu nav žurnāla ierakstu"
       add: "Pievienot"
       join: "Pievienojieties"
       leave: "Iziet"
@@ -855,10 +855,10 @@ lv:
         one: "Izdzēst %{count}"
         other: "Izdzēst %{count}"
       username: "lietotājvārds"
-      trust_level: "Uzticības līmenis"
+      trust_level: "uzticības līmenis"
       read_time: "lasīšanas laiks"
       topics_entered: "pievienotās tēmas"
-      post_count: "# ieraksti"
+      post_count: "raksti"
       confirm_delete_other_accounts: "Vai esat pārliecināti, ka vēlaties dzēst šos profilus?"
       powered_by: "izmantojot <a href='https://maxmind.com'>MaxMindDB</a>"
       copied: "nokopēts"
@@ -2842,9 +2842,6 @@ lv:
         remove_muted_tags_from_latest:
           always: "vienmēr"
           never: "nekad"
-      reports:
-        sidebar_link:
-          all: "Viss"
       dashboard:
         title: "Administrācijas panelis"
         version: "Versija"
@@ -3007,31 +3004,16 @@ lv:
           badges: "Žetoni"
           notifications: "Paziņojumi"
           permalinks: "Patstāvīgā saite"
-          trust_levels: "Uzticības Līmenis"
           users: "Lietotāji"
           groups: "Grupas"
-          user_fields: "Lietotāja lauki"
-          watched_words: "Vārdi, kas tiek novēroti"
           legal: "Jurid."
       appearance:
         sidebar_link:
           emoji: "Smaidiņi"
           navigation: "Pārvietošanās"
           themes: "Dizaini"
-      email_logs:
-        sidebar_link:
-          sent: "Nosūtne"
-          skipped: "Izlaists"
-          bounced: "Pārsūtīts"
-          received: "Saņemts"
-          rejected: "Noraidīts"
       security:
         title: "Drošība"
-        sidebar_link:
-          error_logs: "Kļūdu saraksts (log)"
-          screened_emails: "Pārbaudītie e-pasti"
-          screened_ips: "Pārbaudītās IP"
-          screened_urls: "Pārbaudītie URL"
       section_landing_pages:
         account:
           title: "Konts"
@@ -3078,7 +3060,6 @@ lv:
         sidebar_link:
           developer: "Izstrādātājs"
           embedding: "Ieguldīšana"
-          rate_limits: "(Rate Limits)"
           user_api: "Lietotāja API"
           onebox: "Onebox"
           files: "Faili"
@@ -3818,6 +3799,9 @@ lv:
         user_title: "Lietotājs"
         username: "Lietotājvārds"
         delete_confirm: Vai tiešām vēlies dzēst šo ierakstu?
+        nav:
+          settings: "Iestatījumi"
+          permalinks: "Patstāvīgā saite"
         form:
           label: "Jauns:"
           url: "URL"

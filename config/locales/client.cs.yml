@@ -342,7 +342,7 @@ cs:
       title: "O %{title}"
       stats: "Statistiky webu"
       our_admins: "Naši správci"
-      our_moderators: "Naši Moderátoři"
+      our_moderators: "Naši moderátoři"
       moderators: "Moderátoři"
       stat:
         all_time: "Za celou dobu"
@@ -377,8 +377,8 @@ cs:
         topics:
           one: "%{formatted_number} téma"
           few: "%{formatted_number} témata"
-          many: "%{formatted_number} témata"
-          other: "%{formatted_number} témata"
+          many: "%{formatted_number} témat"
+          other: "%{formatted_number} témat"
         posts:
           one: "Je zobrazen pouze %{formatted_number} příspěvek"
           few: "%{formatted_number} příspěvky"
@@ -412,7 +412,7 @@ cs:
             other {{eu_formatted_number}~}
           } z EU.
         periods:
-          last_7_days: "Za posledních 7 dní"
+          last_7_days: "za posledních 7 dní"
           today: "dnes"
           all_time: "za celou dobu"
       member_count:
@@ -1021,13 +1021,13 @@ cs:
       public_admission: "Povolit uživatelům volný přístup do skupiny (skupina musí být veřejně viditelná)"
       public_exit: "Povolit uživatelům volně opustit skupinu"
       empty:
-        posts: "V této skupině není od žádného člena ani jeden příspěvek."
-        members: "V této skupině není žádny uživatel."
-        requests: "Nebyly nalezeny žádné žádosti o členství pro tuto skupinu."
-        mentions: "O této skupině nepadla žádná zmínka."
-        messages: "Pro tuto skupinu není žádná zpráva."
-        topics: "V této skupině není od žádného člena ani jedno téma."
-        logs: "Pro tuto skupinu neexistují žádné logy."
+        posts: "V této skupině není od žádného člena ani jeden příspěvek"
+        members: "V této skupině není žádny uživatel"
+        requests: "Nebyly nalezeny žádné žádosti o členství pro tuto skupinu"
+        mentions: "O této skupině nepadla žádná zmínka"
+        messages: "Pro tuto skupinu není žádná zpráva"
+        topics: "V této skupině není od žádného člena ani jedno téma"
+        logs: "Pro tuto skupinu neexistují žádné logy"
       add: "Přidat"
       join: "Přidat se ke skupině"
       leave: "Opustit skupinu"
@@ -1052,7 +1052,7 @@ cs:
         all: "Všechny skupiny"
         empty: "Žádné viditelné skupiny."
         filter: "Filtrovat podle typu skupiny"
-        owner_groups: "Moje skupiny"
+        owner_groups: "Mnou vlastněné skupiny"
         close_groups: "Uzavřené skupiny"
         automatic_groups: "Automatické skupiny"
         automatic: "Automatické"
@@ -1230,7 +1230,7 @@ cs:
       trust_level: "úroveň důvěry"
       read_time: "čas k přečtení"
       topics_entered: "témat zadáno"
-      post_count: "počet příspěvků"
+      post_count: "příspěvky"
       confirm_delete_other_accounts: "Určitě chcete smazat tyto účty?"
       powered_by: "používá <a href='https://maxmind.com'>MaxMindDB</a>"
       copied: "zkopírováno"
@@ -1841,7 +1841,7 @@ cs:
         never: "Nikdy"
       email_previous_replies:
         title: "Zahrnout předchozí reakce na konci emailů"
-        unless_emailed: "pokud nebyli dříve odeslány"
+        unless_emailed: "pokud již nebyly odeslány dříve"
         always: "vždy"
         never: "nikdy"
       email_digests:
@@ -2342,7 +2342,7 @@ cs:
       caps_lock_warning: "zapnutý Caps Lock"
       error: "Neznámá chyba"
       cookies_error: "Zdá se, že váš prohlížeč má zakázané soubory cookie. Možná se nebudete moci přihlásit, aniž byste je nejdříve povolili."
-      rate_limit: "Počkejte před dalším pokusem se přihlásit."
+      rate_limit: "Před dalším pokusem o přihlášení, prosím, vyčkejte."
       password_expired: "Platnost hesla vypršela. Prosím <a href='%{reset_url}'>resetujte své heslo</a>."
       blank_username: "Zadejte vaši emailovou adresu a uživatelské jméno."
       blank_username_or_password: "Vyplňte prosím email nebo uživatelské jméno, a heslo."
@@ -3691,6 +3691,8 @@ cs:
           many: "Máte označeno <b>%{count}</b> příspěvků."
           other: "Máte označeno <b>%{count}</b> příspěvků."
       deleted_by_author_simple: "(téma smazáno autorem)"
+    post_list:
+      aria_post_number: "%{title} - příspěvek #%{postNumber}"
     post:
       confirm_delete: "Opravdu chcete tento příspěvek smazat?"
       quote_reply: "Citovat"
@@ -5037,7 +5039,7 @@ cs:
           save: "Uložit jako..."
     powered_by_discourse: "Powered by Discourse"
   admin_js:
-    type_to_filter: "text pro filtrování..."
+    type_to_filter: "Text pro filtrování..."
     settings: "Nastavení"
     admin:
       title: "Administrátor"
@@ -5053,9 +5055,9 @@ cs:
         meta_doc: "Prohlédněte si naši <a href='https://meta.discourse.org/t/-/240233' rel='noopener noreferrer' target='_blank'>dokumentaci</a> , kde najdete podrobný přehled o reportech."
         sidebar_title: "Přehledy"
         sidebar_link:
-          all: "Vše"
+          all: "Všechny přehledy"
       new_features:
-        title: "Co je nového"
+        title: "Co je nového?"
         check_for_updates: "Zkontrolovat aktualizace"
       dashboard:
         title: "Nástěnka"
@@ -5074,7 +5076,7 @@ cs:
         problems_found: "Několik rad na základě vašeho aktuálního nastavení webu"
         dismiss_notice: "Označit jako přečtené"
         new_features:
-          title: "Co je nového"
+          title: "Co je nového?"
           subtitle: "Neustále vydáváme nové funkce a vylepšení. Tato stránka obsahuje hlavní body, ale kliknutím na „Další informace“ zobrazíte rozsáhlé poznámky k verzi."
           previous_announcements: "Předchozí oznámení o nových funkcích můžete vidět na <a href='%{url}' target='_blank'>Discourse Meta</a>"
           learn_more: "Více informací..."
@@ -5157,6 +5159,7 @@ cs:
             include_subcategories:
               label: "Zahrnout podkategorie"
       flags:
+        title: "Moderování"
         description: "Popis"
         enabled: "Zapnuto?"
       groups:
@@ -5237,7 +5240,7 @@ cs:
         never_used: (nikdy)
         generate: "Vygenerovat API klíč"
         undo_revoke: "Zpět zrušit"
-        revoke: "zrušit"
+        revoke: "Odvolat"
         all_users: "Všichni uživatelé"
         active_keys: "Aktivní API klíče"
         manage_keys: Správa klíčů
@@ -5450,65 +5453,43 @@ cs:
         sidebar_link:
           backups: "Zálohy"
           whats_new:
-            title: "Co je nového"
+            title: "Co je nového?"
       community:
         title: "Komunita"
         sidebar_link:
           about_your_site: "O vašem webu"
           badges: "Odznaky"
-          login_and_authentication: "Přihlášení a ověřování"
           notifications: "Upozornění"
           permalinks: "Trvalé odkazy"
-          trust_levels: "Úrovně důvěry"
           users: "Uživatelé"
           groups: "Skupiny"
-          user_fields: "Uživatelská pole"
-          watched_words: "Sledovaná slova"
           legal: "Právní záležitosti"
-          moderation_flags: "Nastavení moderování"
+          moderation_flags:
+            title: "Moderování"
       appearance:
         title: "Vzhled"
         sidebar_link:
-          font_style: "Styl písma"
-          site_logo: "Logo webu"
           emoji: "Emoji"
           navigation: "Navigace"
           themes: "Motivy"
           components:
             title: "Komponenty"
-          site_texts: "Texty"
       email_settings:
         title: "Nastavení e-mailu"
         sidebar_link:
           appearance: "Vzhled"
-          preview_summary: "Náhled souhrnu"
-          server_setup: "Nastavení serveru"
-      email_logs:
-        title: "E-mailové protokoly"
-        sidebar_link:
-          sent: "Odeslané"
-          skipped: "Přeskočené"
-          bounced: "Vrácené"
-          received: "Přijaté"
-          rejected: "Odmítnuté"
       security:
         title: "Zabezpečení"
         sidebar_link:
-          error_logs: "Chybové protokoly"
-          screened_emails: "Filtrované emaily"
-          screened_ips: "Filtrované IP"
-          screened_urls: "Filtrované URL"
-          search_logs: "Hledání"
           security: "Nastavení zabezpečení"
           spam: "Nastavení nevyžádané pošty"
-          staff_action_logs: "Protokoly akcí redaktorů"
       section_landing_pages:
         account:
           title: "Účet"
           backups:
             title: "Zálohy"
           whats_new:
-            title: "Co je nového"
+            title: "Co je nového?"
       config_areas:
         about:
           header: "O vašem webu"
@@ -5518,6 +5499,7 @@ cs:
           update: "Aktualizovat"
           saved: "uloženo!"
         flags:
+          header: "Moderování"
           description: "Popis"
           enabled: "Zapnuto?"
           edit: "Upravit"
@@ -5562,18 +5544,16 @@ cs:
       advanced:
         title: "Pokročilé"
         sidebar_link:
-          api_keys: "Klíče API"
+          api_keys:
+            title: "Klíče API"
           developer: "Vývojáři"
           embedding: "Zabudování"
-          rate_limits: "Limity a omezení"
           user_api: "Uživatelské API"
-          web_hooks: "Webhooks"
           onebox: "Onebox"
           files: "Soubory"
           other_options: "Ostatní"
           search: "Vyhledávání"
           experimental: "Experimentální"
-          all_site_settings: "Všechna nastavení"
       navigation_menu:
         sidebar: "Postranní panel"
         header_dropdown: "Rozbalovací nabídka záhlaví"
@@ -5743,7 +5723,7 @@ cs:
           color_scheme_select: "Vybrat barvy motivu"
           custom_sections: "Vlastní sekce:"
           theme_components: "Komponenty motivu"
-          add_all_themes: "Přidat všechna témata"
+          add_all_themes: "Přidat všechny motivy"
           convert: "Převést"
           convert_component_alert: "Opravdu chcete převést tuto komponentu na motiv? Bude odstraněna jako komponenta z %{relatives}."
           convert_component_tooltip: "Převést tuto komponentu na motiv"
@@ -5838,7 +5818,7 @@ cs:
           add: "Přidat"
           theme_settings: "Nastavení motivu"
           edit_objects_theme_setting: "Editor nastavení objektů"
-          overriden_settings_explanation: "Přepsaná nastavení jsou označena tečkou a mají zvýrazněnou barvu. Chcete-li obnovit tato nastavení na výchozí hodnotu, stiskněte vedle ní tlačítko Obnovit."
+          overriden_settings_explanation: "Přepsaná nastavení jsou označena tečkou a mají zvýrazněnou barvu. Chcete-li obnovit tato nastavení na výchozí hodnotu, stiskněte vedle ní tlačítko Resetovat."
           no_settings: "Tento motiv nemá nastavení"
           theme_translations: "Překlady motivů"
           empty: "Žádné položky"
@@ -6185,7 +6165,7 @@ cs:
       watched_words:
         title: "Sledovaná slova"
         search: "hledat"
-        clear_filter: "Zrušit"
+        clear_filter: "Nastavit prázdné"
         download: Stáhnout
         clear_all: Vymazat vše
         actions:
@@ -6565,7 +6545,7 @@ cs:
       site_settings:
         title: "Nastavení"
         no_results: "Nenalezeny žádné výsledky."
-        clear_filter: "Zrušit"
+        clear_filter: "Nastavit prázdné"
         add_url: "přidat URL"
         add_host: "přidat hostitele"
         uploaded_image_list:
@@ -6646,7 +6626,7 @@ cs:
         save: Uložit
         delete: Smazat
         delete_confirm: Určitě chcete tento oznak smazat?
-        revoke: zrušit
+        revoke: Odvolat
         reason: Důvod
         expand: Rozbalit &hellip;
         revoke_confirm: Určitě chcete tento odznak odejmout?
@@ -6660,7 +6640,9 @@ cs:
         allow_title: Povolit užití odzanku jako titul
         multiple_grant: Může být přiděleno několikrát
         visibility_heading: Viditelnost
-        listable: Zobrazit odznak na veřejné stránce s odzanky
+        listable: Zobrazit odznak na veřejné stránce s odznaky
+        show_in_post_header: Zobrazit odznak u příspěvku, za který byl udělen
+        show_in_post_header_disabled: Vyžaduje, aby byly povoleny obě možnosti – „Zobrazit odznak na veřejné stránce s odznaky“ a „Zobrazit příspěvek udělující odznak na stránce odznaku“.
         enabled: zapnuto
         disabled: vypnuto
         icon: Ikona
@@ -6674,7 +6656,7 @@ cs:
         query: Dotaz na odznak (SQL)
         target_posts: Zeptat se na cílový příspěvek
         auto_revoke: Denně spouštět zrušení dotazu
-        show_posts: Ukázat příspěvek získávající odznak na stránce s odznaky.
+        show_posts: Zobrazit příspěvek udělující odznak na stránce odznaku
         trigger: Spouštěč
         trigger_type:
           none: "Aktualizujte denně"
@@ -6767,6 +6749,9 @@ cs:
         username: "Uživatelské jméno"
         delete_confirm: Opravdu chcete smazat tento trvalý odkaz?
         more_options: "Další možnosti"
+        nav:
+          settings: "Nastavení"
+          permalinks: "Trvalé odkazy"
         form:
           label: "Nové:"
           url: "URL"

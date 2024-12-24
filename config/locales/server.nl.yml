@@ -1723,8 +1723,6 @@ nl:
     summary_percent_filter: "Wanneer een gebruiker op 'Dit topic samenvatten' klikt, de top % van berichten weergeven"
     summary_max_results: "Maximale aantal weergegeven berichten door 'Dit topic samenvatten'"
     summary_timeline_button: "Toon een knop 'Samenvatten' in de tijdlijn"
-    summarization_strategy: "Aanvullende manieren om door plug-ins geregistreerde content samen te vatten"
-    custom_summarization_allowed_groups: "Groepen mogen content samenvatten met behulp van de 'summarization_strategy'."
     enable_personal_messages: "VEROUDERD, gebruik in plaats daarvan de instelling 'groepen waarvoor persoonlijke berichten zijn ingeschakeld'. Geef gebruikers met vertrouwensniveau 1 (configureerbaar via minimaal vertrouwen om berichten te verzenden) de mogelijkheid om berichten te maken en berichten te beantwoorden. Houd er rekening mee dat medewerkers altijd berichten kunnen sturen, wat er ook gebeurt."
     personal_message_enabled_groups: "Sta gebruikers in deze groepen toe om persoonlijke berichten te MAKEN. BELANGRIJK: 1) alle gebruikers kunnen ANTWOORDEN op berichten. 2) Beheerders en moderators kunnen berichten aan elke gebruiker maken. 3) Vertrouwensniveaugroepen omvatten hogere niveaus; kies trust_level_1 om TL1, TL2, TL3, TL4 toe te staan maar niet TL0. 4) Groepsinteractie-instellingen overschrijven deze instelling voor het sturen van berichten naar specifieke groepen."
     enable_system_message_replies: "Toestaan dat gebruikers op systeemberichten kunnen antwoorden, zelfs als persoonlijke berichten zijn uitgeschakeld"
@@ -2437,7 +2435,6 @@ nl:
     default_navigation_menu_tags: "De geselecteerde tags worden standaard weergegeven in de sectie Tags van het navigatiemenu."
     experimental_new_new_view_groups: 'Schakel een nieuwe topicslijst in die ongelezen en nieuwe topics combineert en laat de link "Alles" in de zijbalk ernaartoe verwijzen.'
     enable_experimental_lightbox: "Vervangt de standaard afbeeldingslightbox door het vernieuwde ontwerp."
-    experimental_glimmer_topic_list_groups: "Schakel de nieuwe 'glimmer'-implementatie voor topiclijsten in. Deze implementatie wordt momenteel ontwikkeld en is niet bedoeld voor productiegebruik. Ontwikkel er geen thema's/plug-ins mee totdat de implementatie is afgerond en aangekondigd."
     glimmer_post_menu_mode: "Bepaal of de nieuwe 'glimmer'-implementatie voor het plaatsingsmenu wordt gebruikt. 'Auto' wordt automatisch ingeschakeld wanneer al je thema's en plug-ins gereed zijn. Deze implementatie wordt momenteel ontwikkeld en is niet bedoeld voor productiegebruik. Ontwikkel er geen thema's/plug-ins mee totdat de implementatie is afgerond en aangekondigd."
     glimmer_post_menu_groups: "Schakel de nieuwe 'glimmer'-implementatie voor het plaatsingsmenu in de 'auto'-modus in voor specifieke gebruikersgroepen. Deze implementatie wordt momenteel ontwikkeld en is niet bedoeld voor productiegebruik. Ontwikkel er geen thema's/plug-ins mee totdat de implementatie is afgerond en aangekondigd."
     experimental_form_templates: "Schakel de functie Formuliersjablonen in. <b>Nadat je deze functie hebt ingeschakeld,</b> kun je de sjablonen beheren via <a href='%{base_path}/admin/customize/form-templates'>Aanpassen / Sjablonen</a>."

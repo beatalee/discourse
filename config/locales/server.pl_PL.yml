@@ -1769,8 +1769,6 @@ pl_PL:
     summary_percent_filter: "Gdy użytkownik kliknie na 'Podsumowaniu tematu', pokaż % najlepszych wpisów"
     summary_max_results: "Maksymalna liczba wpisów zwróconych przez „Podsumuj ten temat”"
     summary_timeline_button: "Pokaż przycisk „Podsumuj” na osi czasu"
-    summarization_strategy: "Dodatkowe sposoby podsumowywania treści zarejestrowanych przez wtyczki"
-    custom_summarization_allowed_groups: "Grupy, które mogą podsumowywać zawartość za pomocą `summarization_strategy`."
     enable_personal_messages: "PRZESTARZAŁE, zamiast tego użyj ustawienia 'personal message enabled groups'. Zezwalaj użytkownikom na poziomie zaufania 1 (konfigurowalnym za pomocą minimalnego zaufania do wysyłania wiadomości) na tworzenie wiadomości i odpowiadanie na wiadomości. Pamiętaj, że personel zawsze może wysyłać wiadomości bez względu na wszystko."
     personal_message_enabled_groups: "Zezwól użytkownikom w tych grupach na TWORZENIE wiadomości osobistych. WAŻNE: 1) Wszyscy użytkownicy mogą ODPOWIADAĆ na wiadomości. 2) Administratorzy i moderatorzy mogą TWORZYĆ wiadomości do dowolnego użytkownika. 3) Grupy poziomu zaufania obejmują wyższe poziomy; wybierz trust_level_1, aby zezwolić na TL1, TL2, TL3, TL4, ale nie zezwalać na TL0. 4) Ustawienia interakcji grupy zastępują to ustawienie w przypadku wysyłania wiadomości do określonych grup."
     enable_system_message_replies: "Pozwala użytkownikom odpowiadać na wiadomości systemowe, nawet jeśli wiadomości osobiste są wyłączone"

@@ -1723,8 +1723,6 @@ pt_BR:
     summary_percent_filter: "Quando um(a) usuário(a) clicar em \"Resuma este tópico\", exiba as % melhores postagens"
     summary_max_results: "Quantidade máxima de postagens retornadas por \"Resumir este tópico\""
     summary_timeline_button: "Exibir um botão \"Resumir\" na linha do tempo"
-    summarization_strategy: "Formas adicionais para resumir o conteúdo registrado pelos plugins"
-    custom_summarization_allowed_groups: "Grupos com permissão para resumir conteúdos usando a \"summarization_strategy\"."
     enable_personal_messages: "PRETERIDO, use a configuração \"grupos habilitados para mensagens pessoais\". Permitir que usuários de nível de confiança 1 (configurável por meio de confiança mínima para enviar mensagens) criem e respondam a mensagens. Observe que a equipe sempre pode enviar mensagens, não importa como."
     personal_message_enabled_groups: "Permita que os(as) usuários(as) nestes grupos CRIEM mensagens pessoais. IMPORTANTE: 1) Todos os(as) usuários(as) podem RESPONDER a mensagens. 2) Administradores(as) e moderadores(as) podem CRIAR mensagens para qualquer usuário(a). 3) Os grupos de nível de confiança incluem níveis mais altos; escolha trust_level_1 para permitir TL1, TL2, TL3, TL4, mas não permitir TL0. 4) Esta configuração é substituída pelas configurações de interação de grupo para a troca de mensagens de grupos específicos."
     enable_system_message_replies: "Permite que os(as) usuários(as) respondam às mensagens do sistema, mesmo se as mensagens pessoais estiverem desativadas"
@@ -2437,7 +2435,6 @@ pt_BR:
     default_navigation_menu_tags: "As etiquetas selecionadas serão exibidas na seção Etiquetas do Menu de Navegação por padrão."
     experimental_new_new_view_groups: 'Ative uma nova lista de tópicos que combina tópicos novos e não lidos e faz o link "Tudo", localizado na barra lateral, apontar para ela.'
     enable_experimental_lightbox: "Substitua a lightbox da imagem padrão pelo design renovado."
-    experimental_glimmer_topic_list_groups: "Ative a implementação da nova lista de tópicos \"glimme\". Esta implementação ainda está em desenvolvimento e não se destina a uso para fins de produção. Não a use para desenvolver temas/plugins até que seja finalizada e anunciada."
     glimmer_post_menu_mode: "Controle se a implementação do novo menu de postagem \"glimmer\" é usada. O modo \"automático\" será ativado automaticamente quando os temas e plugins estiverem prontos. Esta implementação ainda está em desenvolvimento e não se destina a uso para fins de produção. Não a use para desenvolver temas/plugins até que seja finalizada e anunciada."
     glimmer_post_menu_groups: "Ative a implementação do novo menu de postagem \"glimmer\" no modo \"automático\" para grupos de usuários(as) específicos. Esta implementação ainda está em desenvolvimento e não se destina a uso para fins de produção. Não a use para desenvolver temas/plugins até que seja finalizada e anunciada."
     experimental_form_templates: "Ative o recurso de modelo de formulário. <b>Quando ativado</b>, gerencie os modelos em <a href='%{base_path}/admin/customize/form-templates'>Personalizar/Modelos</a>."

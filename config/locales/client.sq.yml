@@ -412,8 +412,8 @@ sq:
       public_admission: "Lejo që përdoruesit të bashkohen lirisht ne grupin (Kërkon grupin e dukshëm publik)"
       public_exit: "Lejo përdoruesit të largohen nga grupi lirshëm"
       empty:
-        posts: "Nuk ka postime nga anëtarët e këtij grupi."
-        members: "Nuk ka anëtarë në këtë grup."
+        posts: "Nuk ka postime nga anëtarët e këtij grupi"
+        members: "Nuk ka anëtarë në këtë grup"
       add: "Shto"
       message: "Message"
       name: "Emri"
@@ -513,10 +513,9 @@ sq:
         one: "Fshi %{count}"
         other: "Fshi %{count}"
       username: "emri i përdoruesit"
-      trust_level: "TL"
       read_time: "koha e leximit"
       topics_entered: "temat e shikuara"
-      post_count: "# postimeve"
+      post_count: "postime"
       confirm_delete_other_accounts: "A jeni të sigurtë që doni të fshini këto llogari?"
     user_fields:
       none: "(zgjidhni një opsion)"
@@ -2033,9 +2032,6 @@ sq:
         remove_muted_tags_from_latest:
           always: "gjithmonë"
           never: "asnjëherë"
-      reports:
-        sidebar_link:
-          all: "Të Gjithë"
       dashboard:
         title: "Paneli i kontrollit"
         version: "Versioni"
@@ -2160,31 +2156,15 @@ sq:
           badges: "Stemat"
           notifications: "Njoftimet"
           permalinks: "Permalinks"
-          trust_levels: "Nivelet e besimit"
           users: "Users"
           groups: "Grupet"
-          user_fields: "Fushat e përdoruesit"
           legal: "Legale"
       appearance:
         sidebar_link:
           emoji: "Emoji"
           navigation: "Shfletimi"
-      email_settings:
-        sidebar_link:
-          preview_summary: "Parashiko emailin përmbledhës"
-      email_logs:
-        sidebar_link:
-          sent: "Dërguar"
-          skipped: "Skipped"
-          received: "Marrë"
-          rejected: "Rejected"
       security:
         title: "Siguria"
-        sidebar_link:
-          error_logs: "Ditar Gabimesh"
-          screened_emails: "Kontroll Email-ash"
-          screened_ips: "Kontroll IP-sh"
-          screened_urls: "Kontroll URL-sh"
       section_landing_pages:
         account:
           title: "Llogaria"
@@ -2228,9 +2208,7 @@ sq:
         sidebar_link:
           developer: "Developer"
           embedding: "Embedding"
-          rate_limits: "Kufizimet"
           user_api: "API e përdoruesit"
-          web_hooks: "Webhooks"
           onebox: "Onebox"
           files: "Skedarë"
           other_options: "Të tjerë"
@@ -2911,6 +2889,9 @@ sq:
         user_title: "User"
         username: "Emri i përdoruesit"
         delete_confirm: Are you sure you want to delete this permalink?
+        nav:
+          settings: "Rregullimet"
+          permalinks: "Permalinks"
         form:
           label: "E Re:"
           url: "URL"
